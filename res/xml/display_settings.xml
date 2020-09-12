@@ -200,14 +200,18 @@
             android:summary="@string/wake_when_plugged_or_unplugged_summary"
             android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
 
+       <ListPreference
+            android:key="android.theme.customization.icon_pack"
+            android:title="@string/theme_customization_icon_pack_title"/>
+
         <ListPreference
             android:key="theme"
             android:summary="@string/summary_placeholder"
             android:title="@string/device_theme" />
 
         <Preference
+	    android:key="vr_display_pref"	
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"
-            android:key="vr_display_pref"
             android:title="@string/display_vr_pref_title" />
 
         <!-- Screen OFF FOD -->
